@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".IndexActivity"
+    android:background="@drawable/index_background">
+
+    <EditText
+        android:id="@+id/userid"
+        android:layout_width="270dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="36dp"
+        android:alpha="1"
+        android:background="@drawable/ui_round_corner"
+        android:drawableLeft="@drawable/ic_user"
+        android:drawablePadding="20dp"
+        android:ems="10"
+        android:fontFamily="@font/nanumgothic"
+        android:hint="User ID"
+        android:inputType="text"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/password"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="270dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="268dp"
+        android:alpha="1"
+        android:background="@drawable/ui_round_corner"
+        android:drawableLeft="@drawable/ic_password"
+        android:drawablePadding="20dp"
+        android:ems="10"
+        android:fontFamily="@font/nanumgothic"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/signin"
+        android:layout_width="240dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="160dp"
+        android:text="Login"
+        android:textAllCaps="false"
+        android:fontFamily="@font/nanumgothic"
+        android:textSize="24sp"
+        android:background="@drawable/ui_round_corner_signin"
+        android:backgroundTint="#c0adff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/signup"
+        android:layout_width="240dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="36dp"
+        android:background="@drawable/ui_round_corner_signup"
+        android:fontFamily="@font/nanumgothic"
+        android:text="Sign up"
+        android:textAllCaps="false"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/signupExplanation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="96dp"
+        android:fontFamily="@font/nanumgothic"
+        android:text="Don't you have any account yet?"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/logoImage"
+        android:layout_width="233dp"
+        android:layout_height="196dp"
+        android:layout_marginTop="60dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo_ytamin_stroke" />
+
+</android.support.constraint.ConstraintLayout>
